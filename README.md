@@ -3,17 +3,20 @@
 ToDo List:
 
  - Radio
- - Local music
- - Phone
- - GPS?
- - ?
+ - MP3 (phone? local?)
+ - Phone handsfree
+ - GPS Tracker
+ - GPS Nav?
  - 
 
 
 Hardware:
+    FM Radio: RDA5807M FM Stereo Radio Wireless Module
+    CB Rx: RTL-SDR
+    CB Tx: RPi GPIO4
 
-FM Radio: RDA5807M FM Stereo Radio Wireless Module
+Software:
+    Hands Free Phone:
+        bluez (v5)
+        ofono (http://git.kernel.org/cgit/network/ofono/ofono.git/tree/HACKING)
 
-
-Credits:
-GUI stuff learnt on the ZetCode PyQt4 tutorial, on the go.

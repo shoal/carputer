@@ -21,6 +21,7 @@ from PyQt4.QtGui import *
 from RadioWidget import RadioWidget
 from CBWidget import CBWidget
 from MP3Widget import MP3Widget
+from PhoneWidget import PhoneWidget
 from ModeListWidget import ModeListWidget
 from CommonWidget import CommonWidget
 
@@ -47,11 +48,13 @@ class Carputer(QtGui.QWidget):
         radioWidget = RadioWidget(self)
         mp3Widget = MP3Widget(self)
         cbWidget = CBWidget(self)
+        phoneWidget = PhoneWidget(self)
 
         self.modeStack = QStackedWidget()
         self.modeStack.addWidget(radioWidget)
         self.modeStack.addWidget(mp3Widget)
         self.modeStack.addWidget(cbWidget)
+        self.modeStack.addWidget(phoneWidget)
 
 
         # Bottom widget does common stuff.  Volume etc.
